@@ -26,7 +26,6 @@ class Card extends HTMLElement {
         this.shadowRoot.querySelector('img').src = this.getAttribute('profile');
     }
     toggleInfo() {
-        console.log(123);
         this.showInfo = !this.showInfo;
         const info = this.shadowRoot.querySelector('.info');
         let toggleBtn = this.shadowRoot.querySelector('#toggle-info');
